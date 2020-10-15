@@ -41,8 +41,10 @@ namespace MsgDemo
                 }
                 else
                 {
+                    string msg = (input_int > num) ? "小一點" : "大一點";
+
                     //TODO: 提示: 大一點  小一點...
-                    MessageBox.Show($"NO", "Random Num", MessageBoxButtons.OK);
+                    MessageBox.Show($"{msg}", "Random Num", MessageBoxButtons.OK);
 
                 }
 
