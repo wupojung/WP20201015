@@ -13,7 +13,7 @@ namespace MsgDemo
     public partial class Form1 : Form
     {
 
-        int num = 55;
+        private int num = 0;
         public Form1()
         {
             InitializeComponent();
@@ -33,12 +33,22 @@ namespace MsgDemo
                 int input_int = int.Parse(input_str);
 
                 //TODO: 寫判斷邏輯
+                if (input_int == num)
+                {
+                    //顯示內容
+                    MessageBox.Show($"YES", "Random Num", MessageBoxButtons.OK);
 
-                //顯示內容
-                MessageBox.Show($"{input_int}", "Random Num", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    //TODO: 提示: 大一點  小一點...
+                    MessageBox.Show($"NO", "Random Num", MessageBoxButtons.OK);
+
+                }
+
             }
             catch (Exception)
-            { 
+            {
                 //錯誤提示
                 MessageBox.Show($"不要亂輸入", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 //throw;
