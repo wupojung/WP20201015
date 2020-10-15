@@ -12,15 +12,12 @@ namespace MsgDemo
 {
     public partial class Form1 : Form
     {
-
-        private int num = 0;
+        private int num = 2;
         public Form1()
         {
             InitializeComponent();
-
             //TODO: 
             num = new Random().Next(100);
-
         }
 
         private void btnGo_Click(object sender, EventArgs e)
