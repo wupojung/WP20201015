@@ -12,7 +12,7 @@ namespace MsgDemo
 {
     public partial class Form1 : Form
     {
-        private int num = 2;
+        private int num = 1111111;
         public Form1()
         {
             InitializeComponent();
